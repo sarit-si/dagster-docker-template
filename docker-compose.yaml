@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  dagster:
+    image: dagster
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./dags:/opt/dagster/dags
+      - ./home:/opt/dagster/home
