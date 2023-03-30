@@ -1,7 +1,0 @@
-2023-03-30 21:22:18 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - LOGS_CAPTURED - Started capturing logs in process (pid: 146).
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - gen_message - STEP_START - Started execution of step "gen_message".
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - gen_message - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - gen_message - Writing file at: /opt/dagster/home/storage/gen_message
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - gen_message - ASSET_MATERIALIZATION - Materialized value gen_message.
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - gen_message - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
-2023-03-30 21:22:19 +0000 - dagster - DEBUG - __ASSET_JOB - 18ce6c72-4d96-4403-b561-23be0869f701 - 146 - gen_message - STEP_SUCCESS - Finished execution of step "gen_message" in 567ms.
