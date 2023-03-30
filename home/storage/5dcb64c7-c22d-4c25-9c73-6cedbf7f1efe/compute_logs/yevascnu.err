@@ -1,0 +1,8 @@
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - LOGS_CAPTURED - Started capturing logs in process (pid: 4285).
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - hello - STEP_START - Started execution of step "hello".
+2023-03-30 21:40:40 +0000 - dagster - INFO - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - hello - Hello World!!!
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - hello - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - hello - Writing file at: /opt/dagster/home/storage/hello
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - hello - ASSET_MATERIALIZATION - Materialized value hello.
+2023-03-30 21:40:40 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - hello - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-03-30 21:40:41 +0000 - dagster - DEBUG - __ASSET_JOB - 5dcb64c7-c22d-4c25-9c73-6cedbf7f1efe - 4285 - hello - STEP_SUCCESS - Finished execution of step "hello" in 495ms.

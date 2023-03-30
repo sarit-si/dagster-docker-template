@@ -1,13 +1,13 @@
 from dagster import load_assets_from_modules, repository
-import example_dag
+import hello_world, hi_user
 
-
-@repository(name="EXAMPLE")
+# A sample repository
+@repository(name="SAMPLE")
 def example():
 
     example_assets = load_assets_from_modules(
-        modules=[example],
-        group_name="EXAMPLE"
+        modules=[hello_world, hi_user],
+        group_name="examples"
     )
 
     return [
