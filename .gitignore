@@ -1,3 +1,7 @@
+# User added directories/files
+home/
+
+# Imported from github defauly Python .gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
