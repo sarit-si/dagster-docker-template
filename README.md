@@ -9,6 +9,7 @@ cd dagster-docker-template
 docker compose up -d
 ````
 
-- To customise the Dagster instance, a [`dagster.yaml`](https://docs.dagster.io/deployment/dagster-instance) needs to be created. Place it in the `home` folder. This needs `docker compose down && docker compose up -d`. Without the `dagster.yaml`, dagster will write logs, events, storage, etc. to `/opt/dags/home` folder.
-- The `home` and `dags` folders are volume mounted inside the container.
+- (Optional) Create `home` folder. Else, docker compose will create it anyways.
+- (Optional) To customise the Dagster instance, a [`dagster.yaml`](https://docs.dagster.io/deployment/dagster-instance) needs to be created. Place it in the `home` folder. This needs `docker compose down && docker compose up -d`. Without the `dagster.yaml`, dagster will write logs, events, storage, etc. to `/opt/dags/home` folder.
+- The `home` and `dags` folders are volume mounted inside the container. (Note: `home` folder if not present, will automatically get created during docker compose)
 - All assets, resources, etc. need to be placed inside the `dags` folder.
