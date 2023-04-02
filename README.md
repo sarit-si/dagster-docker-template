@@ -1,4 +1,4 @@
-# **Run Dagster Dags in Docker**
+# **Run Dagster Dags in Docker (with Basic Authentication)**
 
 A rudimentary template for a quick Dagster project setup in Docker. This is based on the image build process illustrated in the [Deploying Dagster to Docker](https://docs.dagster.io/deployment/guides/docker) section.
 
@@ -15,4 +15,9 @@ docker compose up -d
 - All assets, resources, etc. need to be placed inside the `dags` folder.
 
 
-### ToDo: Basic authentication
+## **Basic authentication**
+![Login screen](./login_screen.png)
+- As of writing this, Dagster (not Dagster Cloud) does not come with basic authentication out of the box.
+- Used a reverse proxy [Traefik](https://doc.traefik.io/traefik/middlewares/http/basicauth/) to add an "at-least some" secure layer to authenticate users.
+- Traefik has been added as a service in the docker compose file.
+- For the sake of experimentaion, the credentials ***admin/admin*** are set directtly in the compose file instead of as env variables. To have your own, follow the steps illustrated in the [Traefik official docs](https://doc.traefik.io/traefik/middlewares/http/basicauth/).
