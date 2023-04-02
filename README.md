@@ -21,3 +21,5 @@ docker compose up -d
 - Used a reverse proxy [Traefik](https://doc.traefik.io/traefik/middlewares/http/basicauth/) to add an "at-least some" secure layer to authenticate users.
 - Traefik has been added as a service in the docker compose file.
 - For the sake of experimentaion, the credentials ***admin/admin*** are set directtly in the compose file instead of as env variables. To have your own, follow the steps illustrated in the [Traefik official docs](https://doc.traefik.io/traefik/middlewares/http/basicauth/).
+
+![Main Page](./main_page.png)
