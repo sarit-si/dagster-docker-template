@@ -14,7 +14,7 @@ services:
     labels:
       - "traefik.http.routers.dagster.rule=Host(`dags.localhost`)"
       - "traefik.http.routers.dagster.middlewares=dagster-auth"
-      - "traefik.http.middlewares.dagster-auth.basicauth.users=admin:$$apr1$$xqz3f296$$siM4vnxQkI1Pz4t6kGK1R."
+      - "traefik.http.middlewares.dagster-auth.basicauth.users=admin:$$apr1$$xqz3f296$$siM4vnxQkI1Pz4t6kGK1R." # for testing only
     depends_on:
       - traefik
 
