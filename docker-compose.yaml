@@ -6,7 +6,7 @@ services:
     build:
       context: ./docker
       dockerfile: Dockerfile
-    # ports: # Enabling this port will bypass Traefik's BasicAuth, so don'nt!!!
+    # ports: # Enabling this port will bypass Traefik's BasicAuth, so don't!!!
       # - "3000:3000"
     volumes:
       - ./dags:/opt/dagster/dags
