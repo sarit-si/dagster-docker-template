@@ -6,8 +6,23 @@ services:
     build:
       context: ./docker
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
+    # ports: # Enabling this port will bypass Traefik's BasicAuth, so don'nt!!!
+      # - "3000:3000"
     volumes:
       - ./dags:/opt/dagster/dags
       - ./home:/opt/dagster/home
+    labels:
+      - "traefik.http.routers.dagster.rule=Host(`dags.localhost`)"
+      - "traefik.http.routers.dagster.middlewares=dagster-auth"
+      - "traefik.http.middlewares.dagster-auth.basicauth.users=admin:$$apr1$$xqz3f296$$siM4vnxQkI1Pz4t6kGK1R."
+    depends_on:
+      - traefik
+
+  traefik:
+    image: traefik:v2.9
+    command: --api.insecure=true --providers.docker
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
