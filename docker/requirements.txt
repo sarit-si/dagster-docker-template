@@ -7,3 +7,4 @@ pandas
 openpyxl==3.1.2
 pymysql==1.0.2
 great-expectations==0.16.3
+anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
