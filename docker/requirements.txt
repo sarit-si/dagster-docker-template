@@ -1,5 +1,5 @@
 SQLAlchemy==1.4.47
-dagster==1.2.1
+dagster==1.10.16
 dagit==1.2.1
 dagster-mysql==0.18.1
 boto3==1.26.99
@@ -7,3 +7,4 @@ pandas
 openpyxl==3.1.2
 pymysql==1.0.2
 great-expectations==0.16.3
+starlette>=0.47.2 # not directly required, pinned by Snyk to avoid a vulnerability
